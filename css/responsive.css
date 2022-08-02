@@ -1,0 +1,176 @@
+ /**
+*
+* ---------------------------------------------------------------------------
+*
+* Template Name : Odaka | App Promotional html5 responsive template
+* Template URL : http://home2globe.com
+* Author : home2globe
+* Version : 1.0
+*
+* --------------------------------------------------------------------------- 
+*
+*/
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
+/*Large devices (desktops, 992px and up)*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	/*Header*/
+	ul.navigation li {
+	    margin-right: 2px;
+	}
+	ul.navigation > li > a {
+	    padding: 25px 25px;
+	}
+
+	/*Feature*/
+	.app-slide-content:before {
+	    top: 28px;
+	}
+
+}
+/*Medium devices (tablets, 768px and up)*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	/*Header*/
+	.search-bar > .search-box input {
+	    height: 25px;
+	}
+	ul.navigation li.search-bar {
+	    width: 100%;
+	}
+	ul.navigation li.download-box {
+	    padding-left: 0;
+	}
+	#mobile_menu .navigation li.active > a:before,
+	ul.navigation li:hover a:before{
+	  width:50%;
+	}
+	#mobile_menu .navigation li.active > a:after,
+	ul.navigation li:hover a:after{
+	  width:50%;
+	}
+
+	/*Feature*/
+	.app-slide-content:before {
+	    height: 86%;
+	    top: 79px;
+	}
+
+	/*Footer*/
+	.footer-search .app-store {
+	    display: block;
+	}
+	.social-links ul li a >i {
+	    width: 29px;
+	    height: 29px;
+	    line-height: 27px;
+	    font-size: 14px;
+	}
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media only screen and (max-width: 767px) {
+
+	/*Header*/
+	.search-bar > .search-box input {
+	    height: 25px;
+	}
+	ul.navigation li.search-bar {
+	    width: 100%;
+	}
+	ul.navigation li.download-box {
+	    padding-left: 0;
+	}
+	#mobile_menu .navigation li.active > a:before,
+	ul.navigation li:hover a:before{
+	  width:50%;
+	}
+	#mobile_menu .navigation li.active > a:after,
+	ul.navigation li:hover a:after{
+	  width:50%;
+	}
+	/*Slider*/
+	.carousel-caption h5 {
+	    font-size: 23px;
+	    line-height: 29px;
+	}
+	.carousel-caption p{
+		font-size: 16px;
+	}
+	.odaka-app-img {
+	    margin-bottom: 10px;
+	}
+
+	/*App Group Area*/
+	.app-slide-wrap {
+	    margin-top: 50px;
+	}
+	.app-slide-wrap h2 {
+	    font-size: 26px;
+	    font-weight: 500;
+	}
+
+	/*Explore App Area*/
+	.app-slide-content {
+	    padding-top: 40px;
+	}
+	.explore-app-title > h2 {
+	    font-size: 29px;
+	    line-height: 39px;
+	}
+
+	.odaka-carousel-app.app-store {
+	    text-align: center;
+	}
+	.app-store > .odaka-app-img {
+	    width: 170px;
+	    padding-bottom: 20px;
+	}
+	.explore-app-content {
+	    text-align: center;
+	    margin: 0 auto;
+	    align-items: center;
+	    display: block;
+	}
+	#app-slide-explode{
+		padding-left: 68px;
+	}
+	.explore-app-content > ul > li {
+	    margin-bottom: 15px;
+	}
+
+	/*Footer*/
+
+	.footer-area {
+	    padding: 20px 0;
+	}
+	.social-links {
+	    padding-top: 12px;
+	}
+	.footer-search .app-store {
+	    padding-top: 24px;
+	    display: flex;
+	}
+}
+/*Extra small devices (portrait phones, less than 576px)*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#mobile_menu .navigation li.active > a:before,
+	ul.navigation li:hover a:before{
+	  width:50%;
+	}
+	#mobile_menu .navigation li.active > a:after,
+	ul.navigation li:hover a:after{
+	  width:50%;
+	}
+	ul.navigation li.search-bar:hover{
+	  width: 100%;
+	}
+
+
+	/*Footer*/
+	.search_box .input-group {
+	    width: 79%;
+	}
+	.footer-search .odaka-carousel-app.app-store{
+		text-align: left;
+	}
+}

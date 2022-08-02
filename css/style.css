@@ -1,0 +1,1121 @@
+ /*
+  Template Name : OKADA | html5 responsive template
+  Author : Raj Sana
+  Template URL : https://okadagh.com/ 
+  Support: admin@gmail.com
+  Description: HTML5 template.
+  Version : 1.0
+*/
+
+ /*==================================
+           CSS Table Contents
+   ==================================
+  1. Global Area
+  2. Home Page
+      2.1 Slider Area
+      2.2 App Feature Area
+      2.3 Explore Area
+  3. About Page
+      3.1. Team
+      3.2. Core Values
+      3.3. Coverage
+  4. User Page
+      4.1 Screenshot
+  5. Store Page
+  6. Delivery Area
+  7. Privacy Policy
+  8. Footer Area
+
+================================== */
+
+/*=======================================================
+                      1. Global Area
+=======================================================*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-x: hidden;
+  letter-spacing: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  line-height:100%;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6, p, button {
+  margin:0px;
+  padding:0px;
+}
+
+ul, li, a {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+input, select, textarea, button {
+  box-sizing: border-box;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+button:focus, input:focus {
+  outline: none;
+}
+.pb-45{
+  padding-bottom: 45px;
+}
+
+.py-50{
+  padding: 50px 0;
+}
+
+.pb-30{
+  padding-bottom: 30px;
+}
+.pb-50{
+  padding-bottom: 50px;
+}
+.pt-80{
+  padding-top: 80px;
+}
+.common-title{
+  font-size: 25px;
+  color: #f7be07;
+  display: inline-block;
+  text-transform: capitalize;
+}
+.theme-color {
+  color: #f7be07;
+}
+.theme-bg-color {
+  background-color: #f7be07;
+}
+.gray {
+  background-color: #f3f3f3;
+}
+.text-black{
+  color: #000;
+}
+
+/*Section Title*/
+.section-title{
+  margin-bottom: 45px;
+  text-align: center;
+}
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 500;
+    padding-bottom: 14px;
+}
+.section-title h2 > span{
+  color: #f7be07;
+}
+.section-title p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+.section-title p > span {
+    color: #f7be07;
+}
+
+
+/*---------------------------------------------------------
+                     2. Header Area
+----------------------------------------------------------*/
+.header-area{
+  background-color: #000;
+  padding-top: 2px;
+}
+
+.logo{
+    width: 64px;
+}
+
+.logo img{
+    width: 67px;
+    padding-top: 2px;
+}
+
+.main-menu{
+  float: right;
+}
+
+.okada-nav{
+  padding: 0;
+}
+
+ul.navigation li {
+  display: inline-block;
+  margin-right: 5px; 
+}
+
+ul.navigation > li > a {
+  color: #fff;
+  position: relative;
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 25px 29px;
+  -webkit-transition: all .5s;;
+  transition: all .5s;
+}
+
+ul.navigation > li > a:before {
+  bottom: 0;
+  content:"";
+  position: absolute;
+  background: #f7be07;
+  width: 0;
+  height: 4px;
+  left: 50%;
+  -webkit-transition: width .30s ease-in-out;
+  transition: width .30s ease-in-out;
+}
+ul.navigation > li > a:after{
+  background:#f7be07;
+  bottom: 0;
+  content: "";
+  height: 4px;
+  position: absolute;
+  right: 50%;
+  width: 0;
+  -webkit-transition: width .30s ease-in;
+  transition: width .30s ease-in;
+}
+
+#mobile_menu .navigation li.active > a:before,
+ul.navigation li:hover a:before{
+  width: 30%;
+}
+
+#mobile_menu .navigation li.active > a:after,
+ul.navigation li:hover a:after{
+  width:30%;
+}
+
+#mobile_menu .navigation li.active > a,
+ul.navigation li:hover > a {
+    color: #f7be07;
+}
+
+ul.navigation li.search-bar {
+  width: 150px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+ul.navigation li.search-bar:hover{
+  width: 230px;
+}
+
+.search-bar > .search-box input {
+  border: 0;
+  height: 40px;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+       -o-border-radius: 3px;
+      -ms-border-radius: 3px;
+          border-radius: 3px;
+  
+}
+.search-bar > .search-box button {
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  -webkit-border-radius: 0 3px 3px 0;
+     -moz-border-radius: 0 3px 3px 0;
+       -o-border-radius: 0 3px 3px 0;
+      -ms-border-radius: 0 3px 3px 0;
+          border-radius: 0 3px 3px 0;
+}
+
+.search-bar > .search-box button:before {
+  background: #ddd;
+  content: "";
+  height: 28px;
+  left: 0;
+  position: absolute;
+  top: 4px;
+  width: 1px;
+}
+
+.search-box button > i {
+  color: #b9b9b9;
+  font-size: 15px;
+  padding: 6px 10px;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+}
+
+.form-control:focus {
+  background-color: #fff;
+  box-shadow: none;
+}
+
+.form-control::placeholder {
+  color: #b9b9b9;
+  font-size: 13px;
+  padding-left: 0px;
+}
+
+ul.navigation li.download-box {
+    padding-left: 20px;
+}
+
+li.download-box > a.download-btn{
+  background: #f7be07;
+  color: #000;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 11px;
+  text-align: center;
+  -webkit-border-radius: 3px; 
+     -moz-border-radius: 3px; 
+       -o-border-radius: 3px; 
+      -ms-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+}
+
+li.download-box > a.download-btn:hover{
+  color: #fff;
+}
+
+
+/*---------------------------------------------------------
+                     2.1 Slider Area
+----------------------------------------------------------*/
+.carousel-item {
+  background: no-repeat center center scroll;
+  height: 512px;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+/*.carousel-item:before,*/
+.carousel-item.home:before {
+  background-color: rgba(0,0,0,.6);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.carousel-item:before {
+  background-color: rgba(0,0,0,.2);
+}
+
+.odaka-caption{
+  bottom: 50%;
+  left: 15%;
+  text-align: left;
+  -webkit-transform: translateY(50%);
+     -moz-transform: translateY(50%);
+       -o-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.carousel-caption h5 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+}
+.carousel-item.active {
+  color: #f7be07;
+}
+.download-btn {
+  background: #f7be07;
+  color: #000;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 11px;
+  -webkit-border-radius: 3px; 
+     -moz-border-radius: 3px; 
+       -o-border-radius: 3px; 
+      -ms-border-radius: 3px;  
+          border-radius: 3px;
+}
+
+.carousel-caption p {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 15px 0 25px;
+}
+.carousel-caption > a {
+  font-size: 16px;
+  letter-spacing: 0;
+  padding: 12px 16px;
+}
+
+.odaka-caption > .odaka-carousel-app{
+  margin-top: 35px;
+}
+
+.odaka-app-img {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 15px; 
+}
+
+.odaka-app-img img {
+  height: 65px;
+  width: 200px;
+}
+
+/*---------------------------------------------------------
+                    2.2 App Feature Area
+----------------------------------------------------------*/
+.app-slide-block{
+  position: relative;
+}
+
+.app-slide-block img{
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.app-slide-wrapper,
+.explore-app-slide-wrapper,
+.app-user-wrapper{
+  height: 525px;
+  margin: 0 auto;
+  position: relative;
+  width: 251px;
+  -webkit-border-radius: 50%; 
+     -moz-border-radius: 50%; 
+       -o-border-radius: 50%; 
+      -ms-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.app-slide-wrapper-bg,
+.explore-app-slide-wrapper-bg,
+.app-wrapper-bg-user {
+  background-image: url(../img/app-frame/iphone.png);
+  background-repeat: no-repeat;
+  display: block;
+  height: 574px;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  width: 288px;
+  z-index: 2;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);   
+}
+
+.app-slide-wrap h2{
+  font-size: 35px;
+}
+
+.app-slide-content {
+    padding-top: 53px;
+}
+
+.app-slide-content:before {
+  background: url(../img/bg/gradient-sep.png) no-repeat center center;
+  content: '';
+  height: 100%;
+  left: 41px;
+  position: absolute;
+  top: 35px;
+  width: 2px;   
+}
+
+.single-app-slide-content {
+  margin-bottom: 22px;
+}
+
+.single-app-slide-content:last-child{
+  margin-bottom: 0;
+}
+
+.single-app-slide-content .icon-box {
+  background-color: #fff;
+  border: 2px solid #f7be07;
+  height: 55px;
+  margin-right: 29px;
+  text-align: center;
+  width: 55px;
+  z-index: 99;
+  -webkit-border-radius: 50%; 
+     -moz-border-radius: 50%; 
+       -o-border-radius: 50%; 
+      -ms-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-transition: all 0.5s; 
+          transition: all 0.5s;
+}
+
+.single-app-slide-content.active .icon-box,
+.icon-box:hover {
+  background-color: #f7be07;
+}
+
+.single-app-slide-content.active .icon-box > i,
+.icon-box i:hover {
+  color: #fff;
+}
+
+.icon-box i {
+  font-size: 20px;
+  color: #f7be07;
+  line-height: 50px;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+}
+
+.media-body h5 {
+    font-weight: 500;
+    font-size: 19px;
+    padding-bottom: 6px;
+}
+
+.media-body p {
+    font-size: 13.5px;
+    line-height: 20px;
+}
+
+/*---------------------------------------------------------
+                     3.3 Explore Area
+----------------------------------------------------------*/
+.explore-app-slide-wrapper {
+  height: 490px;
+  width: 224px;
+}
+
+.explore-app-slide-wrapper-bg {
+    background-image: url(../img/app-frame/iphone-small.png);
+    height: 505px;
+    width: 249px;
+}
+
+#explore-app-slide .carousel-item {
+  height: 483px;
+}
+
+.explore-app-title > h2 {
+  color: #000;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.app-store > .odaka-app-img {
+    width: 170px;
+}
+
+.explore-app-content {
+    display: block;
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.explore-app-content > ul > li {
+  background-color: rgba(247,190,7,0.09);
+  border: 5px solid #f7be07;
+  float: left;
+  display: table;
+  margin-right: 10px;
+  height: 140px;
+  width: 140px;
+  -webkit-border-radius: 50%; 
+     -moz-border-radius: 50%; 
+       -o-border-radius: 50%; 
+      -ms-border-radius: 50%;
+          border-radius: 50%;  
+}
+
+.explore-app-body {
+  display: table-cell;
+  font-size: 30px;
+  vertical-align: middle;cursor: pointer;
+}
+.explore-app-body > p {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 14px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
+.explore-app-slogan > p {
+  display: inline-block;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.explore-app-slide-content.active .explore-app-body > p{
+  color: #f7be07;
+}
+
+/*---------------------------------------------------------
+                     3. About Page
+----------------------------------------------------------*/
+/*-------------------------
+            3.1.Team
+            -------------------------*/
+.single-team{
+  position: relative;
+}
+
+.single-team-img{
+  position: relative;
+}
+
+.single-team-img img{
+  width: 100%;
+}
+
+.single-team-img:before {
+  background-color: rgba(0,0,0,.6);
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: scaleX(0);
+     -moz-transform: scaleX(0);
+       -o-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.5s ease 0s;
+          transition: all 0.5s ease 0s; 
+}
+
+.single-team:hover .single-team-img:before {
+  opacity: 1;
+  -webkit-transform: scaleX(1);
+     -moz-transform: scaleX(1);
+       -o-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.single-team:hover .team-content {
+    bottom: 40%;
+}
+
+.single-team:hover .team-content-inner{
+  background-color:rgba(247,190,7,.6);
+}
+
+.team-content{
+  bottom: -17px;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+  -webkit-transition: all 0.5s ease 0s;
+          transition: all 0.5s ease 0s;
+}
+
+.team-content-inner{
+  background-color: #f7be07;
+  margin: 0 auto;
+  padding: 10px 10px 10px 15px;
+  text-align: center;
+  width: 70%;
+}
+
+.team-content-inner h5{
+  color: #fff;
+  font-weight: 400;
+}
+
+/*-------------------------
+            3.2.Core Values
+            -------------------------*/
+.core-values-img,
+.okadagh-symbol-icon {
+  border: 5px solid rgba(247,190,7,.5);
+  height: 130px;
+  margin:0 auto;
+  overflow: hidden;
+  width: 130px;
+  -webkit-border-radius: 50%; 
+     -moz-border-radius: 50%; 
+       -o-border-radius: 50%; 
+      -ms-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in;
+     -moz-transition: all 0.3s ease-in;
+       -o-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in;
+}
+
+.core-values-img img,
+.okadagh-symbol-icon img {
+  border-radius: 50%;
+  padding: 12px;
+  -webkit-transform: scale(1.1); 
+     -moz-transform: scale(1.1); 
+       -o-transform: scale(1.1); 
+      -ms-transform: scale(1.1); 
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s ease-in;
+     -moz-transition: all 0.3s ease-in;
+       -o-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in;
+}
+
+.core-values-img:hover,
+.core-values-img img:hover,
+.okadagh-symbol-icon:hover,
+.okadagh-symbol-icon img:hover{
+  border-color: #f7be07;
+  transform: scale(1);
+}
+
+.core-values-content{
+  margin-top: 20px;
+}
+
+.core-values-content-inner > h5 {
+  color: #000;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/*----------------------
+            3.3.Coverage
+          -------------------------*/
+.coverage-area {
+  position: relative;
+}
+
+.coverage-area:before {
+  background-color: rgba(0,0,0,0.6);
+  content: "";
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;  
+}
+
+#paralux {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.coverage > ul {
+  list-style-type: circle;
+}
+
+.coverage > ul > li,
+.single-overview > ul > li {
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  margin-right: 30px;
+}
+
+.coverage > ul > li:before,
+.single-overview > ul > li:before,
+.overview-inner-content > ul > li:before {
+  border: 1px solid #f7be07;
+  content: "";
+  height: 8px;
+  position: absolute; 
+  left: -18px;
+  top: 9px;
+  width: 8px;
+  -webkit-border-radius: 50%; 
+     -moz-border-radius: 50%; 
+       -o-border-radius: 50%; 
+      -ms-border-radius: 50%;
+          border-radius: 50%;
+}
+
+/*---------------------------------------------------------
+                     4. User Page
+----------------------------------------------------------*/
+.app-user-wrapper {
+  width: 217px; 
+}
+
+.app-wrapper-bg-user {
+  background-image: url(../img/app-frame/app-small.png);
+  height: 510px;
+  width: 255px;
+}
+
+.overview-content {
+  padding: 25px;
+}
+
+.single-overview {
+  margin-bottom: 30px;
+}
+
+.single-overview h3 {
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 15px; 
+}
+
+.overview-inner-content {
+  margin-left: 30px;
+}
+
+.overview-inner-content.icon {
+  margin-left: 0;
+}
+
+.overview-inner-content > ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.overview-inner-content > ul > li {
+    line-height: 25px;
+    position: relative;
+}
+
+.single-overview p > span{
+  color: #f7be07;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.okadagh-symbol-inner {
+    display: inline-block;
+    margin-right: 22px;
+}
+
+.okadagh-symbol-icon {
+  border: 2.5px solid rgba(247,190,7,.5);
+  width: 92px;
+  height: 92px;
+}
+
+.okadagh-symbol-icon img {
+  padding: 10px;
+  margin-top: 4px;
+}
+
+.okadagh-symbol-inner > p {
+    font-weight: 500;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.explore-app-body.user > p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px; 
+  padding: 14px;
+  text-align: center;
+}
+/*.explore-app-slide-content.active .explore-app-body.user > p{
+  color: #f7be07;
+}*/
+
+/*----------------------
+            3.3.Screenshot
+            -------------------------*/
+.screenshot_active.owl-carousel .owl-nav button {
+    position: absolute;
+    right: 5px;
+    top: -43px;
+    font-size: 15px;
+    background: #f7be07;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+.screenshot_active.owl-carousel .owl-nav button.owl-next{
+  right: 40px;
+}
+
+/*---------------------------------------------------------
+                     5. Store Page
+----------------------------------------------------------*/
+.app-slide-wrapper.store {
+  height: 473px;
+  width: 249px;
+}
+
+.app-slide-wrapper-bg.store {
+  height: 473px;
+  width: 260px;
+}
+
+.odaka-carousel-app.app-store {
+  padding-top: 25px;
+  text-align: center;
+    
+}
+.single-overview.store h3,
+.single-overview.delivery h3 {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 10px; 
+}
+
+.explore-app-content > ul > li.store {
+  background-color: rgba(247,190,7,0.09);
+  border: 5px solid #f7be07;
+  display: table;
+  float: left;
+  height: 115px;
+  margin-right: 10px;
+  width: 115px;
+  -webkit-border-radius: 50%; 
+    -moz-border-radius: 50%; 
+      -o-border-radius: 50%; 
+     -ms-border-radius: 50%;
+         border-radius: 50%; 
+}
+
+.explore-app-body > p.store {
+  font-weight: 500;
+  font-size: 13px;
+  padding: 14px;
+  line-height: 18px;
+  text-align: center; 
+}
+
+/*---------------------------------------------------------
+                     6. Delivery Area
+----------------------------------------------------------*/
+.explore-app-body.delivery > p.store {
+    font-size: 10px;
+}
+
+.okadagh-symbol-inner.delivery {
+    margin-right: 24px;
+}
+
+.okadagh-symbol-inner.delivery >p {
+    font-size: 11px;
+}
+
+.app-slide-wrapper-bg.delivery {
+    height: 398px;
+}
+
+.app-slide-wrapper.delivery {
+    height: 397px;
+    width: 250px;
+}
+
+/*---------------------------------------------------------
+                     7. Privacy Policy
+----------------------------------------------------------*/
+.privacy-area{}
+.privacy-block{}
+.privacy-block .title-top {
+    font-weight: 600;
+}
+.privacy-block .title-top > span {
+    color: #f7be07;
+}
+.privacy-block .title-middle {
+    font-weight: 500;
+    font-size: 23px;
+    color: #f7be07;
+    margin-bottom: 10px;
+}
+.privacy-block .title-bottom {
+    color: #f7be07;
+    font-weight: 500;
+    font-size: 17px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+}
+.privacy-content {
+    padding-top: 20px;
+}
+.privacy-content p{
+  margin-bottom: 15px;
+}
+.privacy-content p>span {
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: 500;
+}
+.privacy-content .policy {
+    margin-left: 80px;
+    padding-bottom: 10px;
+}
+.privacy-content ul.licence{
+  list-style-type: upper-roman;
+}
+.privacy-content ul.licence2{
+  list-style-type: lower-alpha;
+}
+.privacy-content .policy li {
+    margin-bottom:5px;
+}
+
+/*---------------------------------------------------------
+                     8. Footer Area
+----------------------------------------------------------*/
+.footer-area{
+  background-color: #000;
+  padding: 45px 0;
+}
+
+.footer-logo{
+  width: 100px;
+}
+
+.footer_widget h3 {
+    margin-bottom: 23px;
+}
+
+.footer_widget ul{
+  list-style: none;
+}
+
+.footer_widget ul li {
+  padding-bottom: 10px;
+}
+
+.footer_widget ul li a{
+  color: #f7be07;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+ul.footer-contact li a{
+  font-family: 'Raleway', sans-serif;
+}
+
+.social-links {
+  padding-top: 6px;
+}
+
+.social-links ul li{
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.social-links ul li a {
+  color: #f7be07;
+  font-size: 16px;
+  text-align: center;
+}
+
+.social-links ul li a > i {
+  border: 1px solid #f7be07;
+  height: 37px;
+  line-height: 35px;
+  width: 37px;
+  -webkit-transition: 0.5s;
+          transition: 0.5s;
+}
+
+.footer-search > .search_box input{
+  border-radius: 0;
+  border: 1px solid #f7be07;
+  background-color: transparent;
+  border-right: 0;
+}
+.footer-search > .search_box button{
+  border-radius: 0;
+  border: 1px solid #f7be07;
+  background-color: transparent;
+  border-left: 0;
+}
+
+.footer-search > .search_box button:before {
+  background: #f7be07;
+  content: "";
+  height: 35px;
+  position: absolute;
+  top: 8px; 
+  width: 1px; 
+}
+
+.footer-search > .search_box button > i {
+  color: #f7be07;
+  font-size: 18px;
+  padding: 15px 18px;
+  -webkit-transition: 0.5s;
+          transition: 0.5s;
+}
+
+.footer-search > .search_box .form-control::placeholder {
+  color: #f7be07;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 0px;
+}
+
+.footer-search .app-store {
+    display: flex;
+    padding-top: 30px;
+}
+.app-store .odaka-app-img.foo img {
+  border: 1px solid #ddd;
+  height: 43px;
+  width: 100%; 
+}
+
+.footer-bottom{
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.footer-bottom p > span {
+  font-weight: 500;
+}
+
+
+.single-content{
+  font-size: 16px;
+}
+#feature-app-slide{
+  padding-top: 65px;
+}
+#explore-app-slide{
+  padding-top: 11px;
+}
+.carousel-item{
+  height: 430px;
+}
+#carouselExampleControls .carousel-item{
+  height: auto;
+}
+.app-body{
+  padding-top: 64px;
+}
